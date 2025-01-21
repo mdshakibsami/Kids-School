@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+
+.quicksand-default {
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+/* Shared Styles */
+
+.hide{
+    display: none;
+}
+
+/* Header Styles */
+header{
+    max-width: 1160px;
+    margin: 0 auto;
+
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar{
+    display: flex;
+    gap: 11px;
+    justify-content: center;
+    align-items: center;
+}
+.navbar img{
+    max-width: 62px;
+    max-height: 62px;
+}
+.navbar h1{
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+nav ul{
+    display: flex;
+    gap: 32px;
+    list-style:none;
+}
+nav ul a{
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 1.25rem;
+
+}
+
+#home{
+    color: #FEA301;
+}
+#about{
+    color: #01ACFD;
+}
+#facilities{
+    color: #05D4DF;
+}
+#addmission{
+    color: #5D58EF;
+}
+
+.contact-button{
+    padding: 10px 60px;
+    color: white;
+    background-color: orange;
+    font-weight: 600;
+    font-size: 1.25rem;
+    border: none;
+    border-radius: 12px;
+}
+
+/* Banner Section */
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.banner-content{
+    max-width: 640px;
+}
+.banner h1{
+    font-weight: 800;
+    font-size: 3.8rem;
+}
+.banner p{
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+
+.banner-button{
+    padding: 15px 47px;
+    color: white;
+    background-color: black;
+    font-weight: 600;
+    font-size: 1.25rem;
+    border: none;
+    border-radius: 12px;
+}
+
+#empowering{
+    color: #FEA301;
+}
+#vision{
+    color: #01ACFD;
+}
+
+
+
+
+
+/* Responsive for mobile devices */
+
+@media screen and (max-width:576px) {
+    .hidden-in-mobile{
+        display: none;
+    }
+    .menu-icon{
+        display: inline;
+    }
+    #h-line{
+        display: block;
+        border: none;
+        height: 2px;
+        background-color: orange;
+    }
+
+
+
+    .banner{
+        flex-direction: column;
+        text-align: center;
+    }
+    .banner-content{
+        order: 2;
+    }
+    .banner-img-div{
+        order: 1;
+    }
+    .banner-img-div img{
+        width: 100%;
+    }
+    .banner h1{
+        font-size: 2rem;
+    }
+    .banner p{
+        font-size: 0.8rem;
+    }
+    .banner-button{
+        font-size: 1rem;
+    }
+}
