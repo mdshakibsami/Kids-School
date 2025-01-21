@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 
 .quicksand-default {
   font-family: "Quicksand", serif;
@@ -9,150 +8,298 @@
 
 /* Shared Styles */
 
-.hide{
-    display: none;
+.hide {
+  display: none;
 }
 
-/* Header Styles */
-header{
-    max-width: 1160px;
-    margin: 0 auto;
-
+/* ------------------------- */
+/*       Header Styles */
+/* ------------------------- */
+header {
+  max-width: 1160px;
+  margin: 0 auto;
 }
-nav{
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar {
+  display: flex;
+  gap: 11px;
+  justify-content: center;
+  align-items: center;
+}
+.navbar img {
+  max-width: 62px;
+  max-height: 62px;
+}
+.navbar h1 {
+  font-weight: 800;
+  font-size: 2rem;
+}
+
+nav ul {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+}
+nav ul a {
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 1.25rem;
+}
+
+#home {
+  color: #fea301;
+}
+#about {
+  color: #01acfd;
+}
+#facilities {
+  color: #05d4df;
+}
+#addmission {
+  color: #5d58ef;
+}
+
+.contact-button {
+  padding: 10px 60px;
+  color: white;
+  background-color: orange;
+  font-weight: 600;
+  font-size: 1.25rem;
+  border: none;
+  border-radius: 12px;
+}
+
+/* ------------------------- */
+/*       Banner Section */
+/* ------------------------- */
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner-content {
+  max-width: 640px;
+}
+.banner h1 {
+  font-weight: 800;
+  font-size: 3.8rem;
+}
+.banner p {
+  font-weight: 400;
+  font-size: 1.25rem;
+}
+
+.banner-button {
+  padding: 15px 47px;
+  color: white;
+  background-color: black;
+  font-weight: 600;
+  font-size: 1.25rem;
+  border: none;
+  border-radius: 12px;
+}
+
+#empowering {
+  color: #fea301;
+}
+#vision {
+  color: #01acfd;
+}
+
+/* ------------------------- */
+/*    Curriculum Section */
+/* ------------------------- */
+.curriculum {
+  max-width: 1160px;
+  background-image: url(/assets/bg.png);
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+.curriculum-title {
+  text-align: center;
+  font-weight: 800;
+  font-size: 2.8rem;
+}
+.curriculum-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.curriculum-img h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  color: white;
+  background-color: #fea301;
+  font-size: 40px;
+  border-radius: 50%;
+}
+.curriculum-img h1:hover {
+    background-color: #64c8ff   ;
+}
+
+.curriculum-cards {
+  display: flex;
+  gap: 29px;
+  justify-content: space-between;
+}
+.curriculum-card {
+  max-width: 370px;
+  max-height: 480px;
+  text-align: center;
+  padding: 52px 40px;
+  border-radius: 19px;
+}
+.curriculum-card h1 {
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+.curriculum-card p {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #808080;
+}
+
+.card1 {
+  background: linear-gradient(to top, #fff, #def5ff 10px);
+}
+.card2 {
+  background: linear-gradient(to top, #fff, #def5ff 10px);
+}
+.card3 {
+  background: linear-gradient(to top, #fff, #def5ff 10px);
+}
+
+#card-1-btn {
+  color: #f0aa00;
+  font-weight: 800;
+}
+#card-2-btn {
+  color: #64c8ff;
+  font-weight: 800;
+}
+#card-3-btn {
+  color: #8700ff;
+  font-weight: 800;
+}
+
+
+
+/* ------------------------- */
+/*       Footer Section */
+/* ------------------------- */
+footer{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-evenly;
+    padding: 120px 100px;
+    background-color:#01ACFD;
+    color: white;
 }
-.navbar{
+.footer-img-title{
     display: flex;
     gap: 11px;
-    justify-content: center;
     align-items: center;
 }
-.navbar img{
-    max-width: 62px;
-    max-height: 62px;
-}
-.navbar h1{
+.footer-img-title h1{
     font-weight: 800;
-    font-size: 2rem;
+    font-size: 42px;
 }
 
-nav ul{
-    display: flex;
-    gap: 32px;
-    list-style:none;
+.footer-des{
+    max-width: 400px;
 }
-nav ul a{
+.about-school-links li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+.about-school-links li a{
     text-decoration: none;
-    font-weight: 800;
     font-size: 1.25rem;
-
-}
-
-#home{
-    color: #FEA301;
-}
-#about{
-    color: #01ACFD;
-}
-#facilities{
-    color: #05D4DF;
-}
-#addmission{
-    color: #5D58EF;
-}
-
-.contact-button{
-    padding: 10px 60px;
+    font-weight: 500;
     color: white;
-    background-color: orange;
-    font-weight: 600;
-    font-size: 1.25rem;
-    border: none;
-    border-radius: 12px;
 }
+.footer-img-title img {
+    max-width: 65px;
+    max-height: 65px;
+  }
 
-/* Banner Section */
-.banner{
+.social-links{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 60px;
+    gap: 15px;
 }
 
-.banner-content{
-    max-width: 640px;
-}
-.banner h1{
-    font-weight: 800;
-    font-size: 3.8rem;
-}
-.banner p{
-    font-weight: 400;
-    font-size: 1.25rem;
-}
-
-.banner-button{
-    padding: 15px 47px;
-    color: white;
-    background-color: black;
-    font-weight: 600;
-    font-size: 1.25rem;
-    border: none;
-    border-radius: 12px;
-}
-
-#empowering{
-    color: #FEA301;
-}
-#vision{
-    color: #01ACFD;
-}
-
-
-
-
-
+/* =============================== */
 /* Responsive for mobile devices */
+/* =============================== */
 
-@media screen and (max-width:576px) {
-    .hidden-in-mobile{
-        display: none;
-    }
-    .menu-icon{
-        display: inline;
-    }
-    #h-line{
-        display: block;
-        border: none;
-        height: 2px;
-        background-color: orange;
-    }
+@media screen and (max-width: 576px) {
+  /* ------------------------- */
+  /*       Header Section */
+  /* ------------------------- */
+  .hidden-in-mobile {
+    display: none;
+  }
+  .menu-icon {
+    display: inline;
+  }
+  #h-line {
+    display: block;
+    border: none;
+    height: 2px;
+    background-color: orange;
+  }
 
+  /* ------------------------- */
+  /*      Banner Section */
+  /* ------------------------- */
+  .banner {
+    flex-direction: column;
+    text-align: center;
+  }
+  .banner-content {
+    order: 2;
+  }
+  .banner-img-div {
+    order: 1;
+  }
+  .banner-img-div img {
+    width: 100%;
+  }
+  .banner h1 {
+    font-size: 2rem;
+  }
+  .banner p {
+    font-size: 0.8rem;
+  }
+  .banner-button {
+    font-size: 1rem;
+  }
 
+  /* ------------------------- */
+  /*    Curriculum Section */
+  /* ------------------------- */
 
-    .banner{
-        flex-direction: column;
-        text-align: center;
-    }
-    .banner-content{
-        order: 2;
-    }
-    .banner-img-div{
-        order: 1;
-    }
-    .banner-img-div img{
-        width: 100%;
-    }
-    .banner h1{
-        font-size: 2rem;
-    }
-    .banner p{
-        font-size: 0.8rem;
-    }
-    .banner-button{
-        font-size: 1rem;
-    }
+  .curriculum-cards {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px;
+  }
+  .curriculum {
+    padding: 10px;
+  }
+  .curriculum-img{
+    display: none;
+  }
+  .curriculum-title{
+    font-size: 1.2rem;
+    
+  }
 }
