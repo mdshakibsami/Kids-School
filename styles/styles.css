@@ -161,6 +161,7 @@ nav ul a {
   text-align: center;
   padding: 52px 40px;
   border-radius: 19px;
+
 }
 .curriculum-card h1 {
   font-weight: 800;
@@ -173,14 +174,18 @@ nav ul a {
 }
 
 .card1 {
-  background: linear-gradient(to top, #fff, #def5ff 10px);
+  background: linear-gradient(to top, white 70% , #DEF5FF );
+  border: 2px solid #DEF5FF;
 }
 .card2 {
-  background: linear-gradient(to top, #fff, #def5ff 10px);
+  background: linear-gradient(to top, white 70% , #FFF4DC );
+  border: 2px solid #FFF4DC;
 }
 .card3 {
-  background: linear-gradient(to top, #fff, #def5ff 10px);
+  background: linear-gradient(to top, white 70% , #F2E8FF );
+  border: 2px solid #F2E8FF;
 }
+
 
 #card-1-btn {
   color: #f0aa00;
