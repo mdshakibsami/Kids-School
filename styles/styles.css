@@ -12,6 +12,10 @@
   display: none;
 }
 
+body{
+    margin: 0px;
+  }
+
 /* ------------------------- */
 /*       Header Styles */
 /* ------------------------- */
@@ -198,8 +202,8 @@ nav ul a {
 /* ------------------------- */
 footer{
     display: flex;
-    justify-content: space-evenly;
-    padding: 120px 100px;
+    justify-content: space-between;
+    padding: 100px 175px;
     background-color:#01ACFD;
     color: white;
 }
@@ -249,6 +253,7 @@ footer{
   }
   .menu-icon {
     display: inline;
+    padding-right: 8px;
   }
   #h-line {
     display: block;
@@ -263,6 +268,7 @@ footer{
   .banner {
     flex-direction: column;
     text-align: center;
+    padding: 10px;
   }
   .banner-content {
     order: 2;
@@ -302,4 +308,19 @@ footer{
     font-size: 1.2rem;
     
   }
+
+ 
+
+/* ------------------------- */
+/*       Footer Section */
+/* ------------------------- */
+footer{
+    display: flex;
+    flex-direction: column;
+    padding:10px;
+    background-color:#01ACFD;
+    color: white;
+}
+
+
 }
