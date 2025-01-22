@@ -12,9 +12,9 @@
   display: none;
 }
 
-body{
-    margin: 0px;
-  }
+body {
+  margin: 0px;
+}
 
 /* ------------------------- */
 /*       Header Styles */
@@ -120,9 +120,11 @@ nav ul a {
 /* ------------------------- */
 .curriculum {
   max-width: 1160px;
+  margin: 0 auto;
+}
+.to-give-bg {
   background-image: url(/assets/bg.png);
   background-repeat: no-repeat;
-  margin: 0 auto;
 }
 .curriculum-title {
   text-align: center;
@@ -147,7 +149,7 @@ nav ul a {
   border-radius: 50%;
 }
 .curriculum-img h1:hover {
-    background-color: #64c8ff   ;
+  background-color: #64c8ff;
 }
 
 .curriculum-cards {
@@ -161,7 +163,6 @@ nav ul a {
   text-align: center;
   padding: 52px 40px;
   border-radius: 19px;
-
 }
 .curriculum-card h1 {
   font-weight: 800;
@@ -174,18 +175,17 @@ nav ul a {
 }
 
 .card1 {
-  background: linear-gradient(to top, white 70% , #DEF5FF );
-  border: 2px solid #DEF5FF;
+  background: linear-gradient(to top, white 70%, #def5ff);
+  border: 2px solid #def5ff;
 }
 .card2 {
-  background: linear-gradient(to top, white 70% , #FFF4DC );
-  border: 2px solid #FFF4DC;
+  background: linear-gradient(to top, white 70%, #fff4dc);
+  border: 2px solid #fff4dc;
 }
 .card3 {
-  background: linear-gradient(to top, white 70% , #F2E8FF );
-  border: 2px solid #F2E8FF;
+  background: linear-gradient(to top, white 70%, #f2e8ff);
+  border: 2px solid #f2e8ff;
 }
-
 
 #card-1-btn {
   color: #f0aa00;
@@ -200,49 +200,158 @@ nav ul a {
   font-weight: 800;
 }
 
+/* Stories Section */
+.stories {
+  background: linear-gradient(to top, rgba(254, 163, 1, 0.3), #ffffff);
+}
+.to-give-background {
+  background-image: url(/assets/bg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.stories-container {
+  max-width: 1160px;
+  margin: 0 auto;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+.left-container{
+  background-color: white;
+  max-width: 540px;
+  border-radius: 16px;
+}
+.left-card-title{
+  font-weight: 800;
+  font-size: 1.5rem;
+  padding: 20px 40px;
+}
+.left-card-dec{
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 10px 40px;
+}
+.right-container{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 20px;
+}
+.stories-title {
+  max-width: 1160px;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 800;
+  font-size: 2.8rem;
+  margin-top: 80px ;
+  margin-bottom: 80px ;
+}
+.stories-card{
+  border-radius: 16px;
+  background-color: white;
+  
+}
+.stories-card img{
+  width: 100%;
+  border-radius: 16px 16px 0px 0px;
+  
+}
+
+.date{
+  position: absolute;
+  margin-top: -45px;
+  margin-left: 40px;
+  padding: 10px 20px;
+  color: white;
+  font-weight: 500;
+  font-size: 1rem;
+  border: none;
+  border-radius: 48px;
+  background-color:green;
+}
+#date-1{
+  background-color: #3CD8E8;
+}
+#date-2{
+  background-color: #5D58F0;
+}
+.r-date{
+  position: absolute;
+  margin-top: -36px;
+  margin-left: 40px;
+  padding: 10px 20px;
+  color: white;
+  font-weight: 500;
+  font-size: 1rem;
+  border: none;
+  border-radius: 48px;
+  background-color:green;
+}
+.right-card-title{
+  font-weight: 800;
+  font-size: .9rem;
+  padding: 20px 20px;
+}
 
 
+.stories-button {
+  padding: 15px 47px;
+  color: white;
+  margin: 0 auto;
+  background-color: black;
+  font-weight: 600;
+  font-size: 1.25rem;
+  border: none;
+  border-radius: 12px;
+}
+.button-div {
+  max-width: 1160px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 80px;
+  padding-bottom: 80px;
+}
 /* ------------------------- */
 /*       Footer Section */
 /* ------------------------- */
-footer{
-    display: flex;
-    justify-content: space-between;
-    padding: 100px 175px;
-    background-color:#01ACFD;
-    color: white;
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 175px;
+  background-color: #01acfd;
+  color: white;
 }
-.footer-img-title{
-    display: flex;
-    gap: 11px;
-    align-items: center;
+.footer-img-title {
+  display: flex;
+  gap: 11px;
+  align-items: center;
 }
-.footer-img-title h1{
-    font-weight: 800;
-    font-size: 42px;
+.footer-img-title h1 {
+  font-weight: 800;
+  font-size: 42px;
+  margin:21px 0px;
 }
 
-.footer-des{
-    max-width: 400px;
+.footer-des {
+  max-width: 400px;
 }
-.about-school-links li{
-    list-style: none;
-    margin-bottom: 10px;
+.about-school-links li {
+  list-style: none;
+  margin-bottom: 10px;
 }
-.about-school-links li a{
-    text-decoration: none;
-    font-size: 1.25rem;
-    font-weight: 500;
-    color: white;
+.about-school-links li a {
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: white;
 }
 .footer-img-title img {
-    max-width: 65px;
-    max-height: 65px;
-  }
+  max-width: 65px;
+  max-height: 65px;
+}
 
-.social-links{
-    display: flex;
-    gap: 15px;
+.social-links {
+  display: flex;
+  gap: 15px;
 }
 
 /* =============================== */
@@ -306,26 +415,53 @@ footer{
   .curriculum {
     padding: 10px;
   }
-  .curriculum-img{
+  .curriculum-img {
     display: none;
   }
-  .curriculum-title{
+  .curriculum-title {
     font-size: 1.2rem;
-    
   }
 
- 
+  
+  /*----------------------*/
+  /* Our Stories Section */
+  /*----------------------*/
+  .stories {
+    padding: 10px;
+  }
+  .left-container{
+    display: none;
+  }
+  
+  .r-date{
+    font-weight: 500;
+    font-size: 0.5rem;
+    margin-top: -27px;
+    margin-left: 20px;
+  }
+  .right-card-title{
+    font-weight: 800;
+    font-size: 0.5rem;
+    padding: 20px 20px;
+  }
+  .stories-title {
+    margin-top: 10px ;
+    margin-bottom: 40px ;
+  }
 
-/* ------------------------- */
-/*       Footer Section */
-/* ------------------------- */
-footer{
+  .button-div {
+
+    margin-top: 30px ;
+    margin-bottom: 0px;
+  }
+  /* ------------------------- */
+  /*       Footer Section */
+  /* ------------------------- */
+  footer {
     display: flex;
     flex-direction: column;
-    padding:10px;
-    background-color:#01ACFD;
+    padding: 10px;
+    background-color: #01acfd;
     color: white;
-}
-
-
+  }
 }
