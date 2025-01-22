@@ -211,7 +211,7 @@ marquee{
 }
 /* Stories Section */
 .stories {
-  background: linear-gradient(to top, rgba(254, 163, 1, 0.3), #ffffff);
+  /* background: linear-gradient(to top, rgba(254, 163, 1, 0.3), #ffffff); */
 }
 .to-give-background {
   background-image: url(bg.png);
