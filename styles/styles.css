@@ -144,12 +144,12 @@ nav ul a {
   width: 60px;
   height: 60px;
   color: white;
-  background-color: #fea301;
+  background-color: #64c8ff;
   font-size: 40px;
   border-radius: 50%;
 }
 .curriculum-img h1:hover {
-  background-color: #64c8ff;
+  background-color: black;
 }
 
 .curriculum-cards {
@@ -200,6 +200,15 @@ nav ul a {
   font-weight: 800;
 }
 
+
+/* Marquee */
+marquee{
+ background-color:#64c8ff;
+ color: white;
+  font-size: 3rem; 
+  padding:10px;
+  font-weight: 800;
+}
 /* Stories Section */
 .stories {
   background: linear-gradient(to top, rgba(254, 163, 1, 0.3), #ffffff);
